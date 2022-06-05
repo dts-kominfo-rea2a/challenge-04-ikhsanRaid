@@ -11,7 +11,7 @@ const dates = [
 const createDate = (dates, posisi = null) => {
   const msArr = [];
   for (let counter = 0; counter < dates.length; counter++) {
-    msArr.push(Date.parse(dates[counter] / 1000));
+    msArr.push(Date.parse(dates[counter]) / 1000);
   }
 
   if (posisi === null) {
